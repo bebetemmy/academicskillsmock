@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGCSE Business Studies Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #quiz-container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box; /* Ensures padding is included in the width */
+            resize: none; /* Prevents manual resizing */
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h1>Academic Skills Practice</h1>
+
+    <!-- Quiz Questions Here -->
+    <div class="question">
+        <p>Q1: (Improving Academic Writing Skills – 7 marks)
+What are three strategies you can use to improve your academic writing skills? In 200 words, explain how you would apply these strategies to enhance the quality of your essays.</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(1)">Reveal Answer</button>
+        <div id="result-1"></div>
+    </div>
+
+    <div class="question">
+        <p>Q2: Finding and Evaluating Sources (5 marks)
+As a student at UWTSD, what support services are available to help with finding and evaluating sources for academic assignments?</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(2)">Reveal Answer</button>
+        <div id="result-2"></div>
+    </div>
+
+    <div class="question">
+        <p>Q3: Referencing (3 marks)
+What is the correct reference for a book in Harvard style? Provide an example.</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(3)">Reveal Answer</button>
+        <div id="result-3"></div>
+    </div>
+
+    <div class="question">
+        <p>Q4: Time Management (6 marks)
+Explain how effective time management skills are crucial for university students. Discuss their importance in balancing academic and personal commitments.</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(4)">Reveal Answer</button>
+        <div id="result-4"></div>
+    </div>
+
+    <div class="question">
+        <p>Q5: Academic Misconduct (4 marks)
+What are four types of academic misconduct, and how can students avoid them?</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(5)">Reveal Answer</button>
+        <div id="result-5"></div>
+    </div>
+
+    <div class="question">
+        <p>Q6: Structure of Academic Writing (5 marks)
+Explain how a clear structure and organization in academic writing enhance communication of ideas.</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(6)">Reveal Answer</button>
+        <div id="result-6"></div>
+    </div>
+
+    <div class="question">
+        <p>Q7: Note-Taking Strategies (4 marks)
+Suggest strategies to help students like Alice, John, Maria, and Hassan make reading easier and more enjoyable.</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(7)">Reveal Answer</button>
+        <div id="result-7"></div>
+    </div>
+
+    <div class="question">
+        <p>Q8: Summarizing Research Articles (5 marks)
+How can you summarize key points from long academic articles for research effectively?</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(8)">Reveal Answer</button>
+        <div id="result-8"></div>
+    </div>
+
+    <div class="question">
+        <p>Q9: Research Process (6 marks)
+Describe the steps involved in conducting research for an academic essay.</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(9)">Reveal Answer</button>
+        <div id="result-9"></div>
+    </div>
+
+    <div class="question">
+        <p>Q10: Referencing Importance (5 marks)
+Why is accurate referencing crucial in academic writing? Explain how you would ensure your references are correct.</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(10)">Reveal Answer</button>
+        <div id="result-10"></div>
+    </div>
+
+    <div class="question">
+        <p>Q11: Critical Thinking (6 marks)
+(a) Explain the role of critical thinking in academic success in 100 words.<br>
+(b) Discuss three techniques to enhance critical thinking skills and how they can be applied in academic work (100 words).</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(11)">Reveal Answer</button>
+        <div id="result-11"></div>
+    </div>
+
+    <div class="question">
+        <p>Q12: Academic Writing Skills (6 marks)
+What are some common challenges students face in academic writing, and how can they overcome these challenges?</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(12)">Reveal Answer</button>
+        <div id="result-12"></div>
+    </div>
+
+    <div class="question">
+        <p>Q13: Literature Review (6 marks)
+What is the purpose of a literature review in academic writing, and what are its key components?</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(13)">Reveal Answer</button>
+        <div id="result-13"></div>
+    </div>
+
+    <div class="question">
+        <p>Q14: Effective Communication (6 marks)
+Discuss the importance of effective communication skills in academic and professional settings.</p>
+        <textarea class="user-answer" rows="4" cols="50" oninput="autoExpand(this)"></textarea>
+        <button onclick="revealAnswer(14)">Reveal Answer</button>
+        <div id="result-14"></div>
+    </div>
+
+</div>
+
+<script>
+    function autoExpand(textarea) {
+        // Reset the height to allow for correct resizing
+        textarea.style.height = 'auto';
+        // Set the height based on the scroll height
+        textarea.style.height = textarea.scrollHeight + 'px';
+    }
+
+    function revealAnswer(questionNumber) {
+        var correctAnswers = [
+            "To improve my academic writing skills, I would focus on three key strategies: planning and outlining, revising and editing, and seeking feedback.<br>First, planning and outlining helps organize my thoughts and ensures that my argument is logically structured. Before I begin writing, I create a detailed outline that includes the main argument, supporting evidence, and counterarguments. This helps me stay focused and ensures that my essay flows smoothly from one point to the next.<br>Second, revising and editing are crucial for refining my work. After writing the first draft, I review it critically, looking for areas where my argument may be unclear or where additional evidence is needed. I also check for grammar, punctuation, and style errors. Multiple revisions help improve clarity and coherence.<br>Finally, I actively seek feedback from peers or instructors. Feedback provides an outside perspective on areas where my writing can be improved, such as structure, argument strength, or clarity. By incorporating their suggestions into my revisions, I can significantly enhance the quality of my final draft. These strategies help ensure that my essays are well-structured, clearly written, and thoroughly polished.",
+            "As a student at UWTSD, there are numerous support services designed to help with finding and evaluating sources for academic assignments.<br>One of the most valuable resources is the university library, which provides access to academic databases such as JSTOR and EBSCOhost, where I can find peer-reviewed journal articles. Additionally, the library staff offers one-on-one sessions and workshops on how to search effectively and evaluate sources for credibility, which is particularly useful when conducting research.<br>Another helpful service is the academic writing center, where I can receive guidance on how to integrate sources into my writing properly. They help with understanding the differences between primary and secondary sources, as well as how to critically assess the reliability and relevance of the information I find. Overall, these services equip me with the necessary skills to conduct thorough and effective research.",
+            "In Harvard style, the correct reference for a book typically follows this format: Author(s) Last name, First initial(s). (Year of publication). *Title of the book*. Edition (if not the first). Place of publication: Publisher.<br>For example: Smith, J. (2020). *Understanding Business Studies*. 2nd ed. London: Academic Press.",
+            "Effective time management skills are crucial for university students because they help prioritize tasks, meet deadlines, and reduce stress levels.<br>By organizing their schedules and allocating specific time slots for studying, attending lectures, and completing assignments, students can ensure they stay on track with their academic goals.<br>Furthermore, effective time management promotes a healthy work-life balance, allowing students to allocate time for relaxation and social activities, which helps prevent burnout.<br>By balancing academic and personal commitments, students can perform better in their studies while maintaining their overall well-being.",
+            "Academic misconduct can take several forms, including plagiarism, cheating on exams, fabrication of data, and unauthorized collaboration.<br>To avoid plagiarism, students must properly cite all sources used in their assignments and ensure that they paraphrase information accurately.<br>Cheating on exams can be prevented by understanding the examination rules and preparing thoroughly to avoid the temptation to cheat.<br>Fabrication of data can be avoided by adhering to ethical research practices and ensuring all findings are based on genuine research.<br>Unauthorized collaboration should be avoided by clearly understanding group work guidelines and communicating with peers about the limits of collaboration.<br>By being aware of these misconduct types and following the appropriate guidelines, students can maintain academic integrity.",
+            "A clear structure in academic writing enhances the communication of ideas by providing a logical framework for presenting arguments and evidence.<br>A well-organized paper typically includes an introduction, body paragraphs, and a conclusion, each serving a distinct purpose.<br>The introduction sets the stage for the topic, presenting the thesis statement that outlines the main argument.<br>Body paragraphs present supporting evidence, each focusing on a single point related to the thesis, which allows readers to follow the line of reasoning easily.<br>The conclusion ties everything together, summarizing the main points and reiterating the thesis.<br>This structure not only aids comprehension but also makes it easier for readers to engage with and evaluate the arguments presented.",
+            "Students can adopt several strategies to make reading easier and more enjoyable.<br>First, they should practice active reading, which involves highlighting key points, taking notes in the margins, and summarizing sections in their own words. This approach keeps them engaged and helps reinforce their understanding of the material.<br>Second, setting specific reading goals, such as a certain number of pages or chapters to read in a session, can motivate students to tackle reading assignments.<br>Finally, forming study groups allows students to discuss readings with peers, providing different perspectives and clarifying difficult concepts.<br>Together, these strategies can transform reading from a chore into an engaging activity.",
+            "To summarize key points from long academic articles effectively, students can employ several techniques.<br>First, skimming the article helps identify main ideas, headings, and subheadings. By reading the introduction and conclusion, students can grasp the overall argument quickly.<br>Next, they should take notes while reading, jotting down important points, supporting evidence, and key terms.<br>Afterward, students can create an outline or bullet-point list summarizing the main arguments and findings in their own words.<br>This not only reinforces comprehension but also aids in retaining information.<br>Finally, revisiting the article after a few days to refresh their memory can solidify their understanding of the material.",
+            "Conducting research for an academic essay involves several key steps.<br>First, students should define a clear research question or thesis statement to guide their inquiry.<br>Next, they need to gather relevant sources, including books, articles, and credible websites, using academic databases and library resources.<br>Once they have collected their sources, students should evaluate the credibility and relevance of the information, ensuring it supports their argument.<br>After this, organizing the research material into categories and taking notes will help streamline the writing process.<br>Finally, drafting the essay by integrating the research into a cohesive argument, citing sources appropriately, and revising for clarity and coherence are essential steps before finalizing the work.",
+            "Accurate referencing is crucial in academic writing because it acknowledges the original authors of ideas and research, thereby avoiding plagiarism.<br>Proper referencing also lends credibility to my work, demonstrating that I have engaged with existing literature and grounded my arguments in scholarly research.<br>To ensure my references are correct, I would familiarize myself with the specific citation style required for my work, such as APA or Harvard.<br>I would keep detailed notes on all sources used during my research, including author names, publication dates, titles, and page numbers.<br>Additionally, using citation management tools like EndNote or Mendeley can help automate the process of generating correctly formatted references and creating a bibliography.",
+            "Critical thinking is essential for academic success because it enables students to analyze and evaluate information rigorously.<br>It involves questioning assumptions, identifying biases, and assessing the validity of arguments.<br>By applying critical thinking skills, students can engage more deeply with the material, draw connections between ideas, and develop a more nuanced understanding of complex topics.<br>This skill also enhances problem-solving abilities, allowing students to approach academic challenges with creativity and logic.<br>In essence, critical thinking fosters independent learning, helping students become more self-directed and confident in their academic pursuits.",
+            "To enhance critical thinking skills, students can employ several techniques:<br>First, practicing Socratic questioning encourages deeper exploration of topics by continuously asking 'why' or 'how.' This method promotes curiosity and critical examination of beliefs.<br>Second, engaging in reflective writing helps students analyze their thought processes and assumptions, making it easier to identify biases and gaps in reasoning.<br>Finally, participating in group discussions or debates allows students to hear diverse perspectives, challenging their viewpoints and encouraging them to think critically about their own arguments.<br>By integrating these techniques into their academic work, students can sharpen their critical thinking abilities and improve their overall learning outcomes.",
+            "Common challenges students face in academic writing include difficulty organizing their thoughts, managing time effectively, and mastering the conventions of academic style and tone.<br>To overcome these challenges, students can use outlines to organize their ideas before writing, breaking down larger tasks into manageable parts.<br>Time management strategies, such as creating a writing schedule, can help allocate sufficient time for drafting and revising.<br>Additionally, seeking feedback from instructors and peers can provide valuable insights into writing style and structure, allowing students to refine their work.<br>Utilizing writing centers or academic support services can also offer guidance and resources for improving writing skills.",
+            "A literature review serves the purpose of summarizing and synthesizing existing research on a specific topic.<br>It helps establish the context and background for a new study or argument by identifying gaps in the current literature and demonstrating how the new research builds upon or differs from previous work.<br>Key components of a literature review include an introduction that outlines the research question, a thematic or chronological organization of relevant studies, and a conclusion that highlights the implications of the reviewed literature for the new research.<br>Properly conducting a literature review not only informs the research process but also strengthens the overall argument.",
+            "Effective communication skills are essential in both academic and professional settings.<br>In academia, clear communication facilitates the exchange of ideas and enhances collaboration among peers and instructors.<br>It is vital for presenting research findings, writing essays, and participating in discussions.<br>In the workplace, effective communication skills help in building professional relationships, conveying information accurately, and negotiating successfully.<br>Strong communicators are more likely to influence others and lead teams effectively.<br>Ultimately, developing effective communication skills contributes to success in both academic and career endeavors."
+        ];
+
+        var answerElement = document.getElementById("result-" + questionNumber);
+        answerElement.innerHTML = correctAnswers[questionNumber - 1]; // Display the correct answer
+    }
+</script>
+
+</body>
+</html>
